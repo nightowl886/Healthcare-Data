@@ -13,13 +13,13 @@ In my dataset, influenza shots are coded as 140 or 141 instead of 5302(flu shots
 
  Percentage of patients receiving influenza shots, stratified by:
 
- a.Age
+ a. Age
 
- b.Race
+ b. Race
 
- c.County (visualized on a map)
+ c. County (visualized on a map)
 
- d.Overall
+ d. Overall
 
 
 ### 2. Running Totals
