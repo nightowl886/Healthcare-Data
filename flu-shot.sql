@@ -25,11 +25,5 @@ on pat.id = flu.patient
 
 
 
-select pat.id
-,pat.first
-, im.code
-from patients pat
-left join immunizations im
-on pat.id = im.patient
 
 
