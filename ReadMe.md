@@ -1,16 +1,16 @@
-Influenza Shots Dashboard (2021)
+# Influenza Shots Dashboard (2021)
 
-# 📌 Project Overview
+## 📌 Project Overview
 This portfolio project explores SQL analysis of influenza shots in 2021, with ongoing expansion into Tableau dashboards.
 The dataset used is Synthea Sample Synthetic Patient Records (2019–2021).
 
 Originally inspired by a YouTube tutorial project analyzing 2022 flu shots. Since that dataset was no longer available, I downloaded the official Synthea dataset and adapted the schema. 
 In my dataset, influenza shots are coded as 140 or 141 instead of 5302(flu shots). This required adjustments to queries and filters to ensure accuracy.
 
-# 🎯 Objectives
+## 🎯 Objectives
 Patient Coverage
 
-##1. Percentage of patients receiving influenza shots, stratified by:
+###1. Percentage of patients receiving influenza shots, stratified by:
 
  a.Age
 
@@ -21,32 +21,32 @@ Patient Coverage
  d.Overall
 
 
-##2. Running Totals
+### 2. Running Totals
 
  Cumulative count of influenza shots administered across 2021
 
 
-##3. Annual Totals
+### 3. Annual Totals
 
  Total number of influenza shots given in 2021
 
 
-##4. Patient List
+### 4. Patient List
 
 Individual-level view showing whether each patient received the influenza shot
 
 
-#📂 Requirements
+## 📂 Requirements
 Patients must be “Active at our hospital” to be included in the analysis.
 
 
-#🛠️ Tools & Methods
+## 🛠️ Tools & Methods
 SQL (PostgreSQL): Data validation, aggregation, stratification queries
 
 Tableau (in progress): Dashboard visualizations (KPI overview, trend charts, county-level maps)
 
 
-#🚀 Adjustments & Debugging
+## 🚀 Adjustments & Debugging
 Schema differences (column names, counts) required modifications to queries.
 
 Code mapping differences (5302 vs 140/141) meant rewriting filters to identify influenza shots correctly.
@@ -54,7 +54,7 @@ Code mapping differences (5302 vs 140/141) meant rewriting filters to identify i
 Debugging and refining queries ensured accurate stratification and totals.
 
 
-#📎 Current Status
+## 📎 Current Status
 SQL queries completed and tested
 
 Tableau dashboard development ongoing
@@ -62,7 +62,7 @@ Tableau dashboard development ongoing
 Future updates will include screenshots and a Tableau Public link
 
 
-#🔗 How to Use
+## 🔗 How to Use
 Clone repository
 
 Run SQL scripts in PostgreSQL
