@@ -1,4 +1,4 @@
------ I am using the dataset from
+----- I am using the dataset from Synthea
 
 CREATE TABLE conditions (
 START DATE
