@@ -1,13 +1,13 @@
 Influenza Shots Dashboard (2021)
 
-#📌 Project Overview
+# 📌 Project Overview
 This portfolio project explores SQL analysis of influenza shots in 2021, with ongoing expansion into Tableau dashboards.
 The dataset used is Synthea Sample Synthetic Patient Records (2019–2021).
 
 Originally inspired by a YouTube tutorial project analyzing 2022 flu shots. Since that dataset was no longer available, I downloaded the official Synthea dataset and adapted the schema. 
 In my dataset, influenza shots are coded as 140 or 141 instead of 5302(flu shots). This required adjustments to queries and filters to ensure accuracy.
 
-#🎯 Objectives
+# 🎯 Objectives
 Patient Coverage
 
 ##1. Percentage of patients receiving influenza shots, stratified by:
