@@ -1,4 +1,16 @@
-with flu_shot_2021 as
+with active_patient as
+(
+select distinct patient
+from encounters as e
+join patients as pat
+on e.patient = pat.id
+where start between '2019-01-01 00:00' and '2021-12-31 23:59'
+and pat.deathdate is null
+and extract(month from age ('2021-12-31', pat.birthdate)) >=6
+),
+
+
+flu_shot_2021 as
 
 (
 select patient, min(date) as earliest_flu_shot_2021
@@ -16,11 +28,18 @@ Select pat.birthdate
 	   , pat.first
 	   , pat.last
 	   , flu.earliest_flu_shot_2021
+	   , case when flu.patient is not null then 1
+	   else 0
+	   end as flu_shot_2021
 
 from patients as pat
 
 left join flu_shot_2021 as flu
 on pat.id = flu.patient
+
+where 1=1
+and pat.id in (select patient from active_patient)
+
 
 
 
