@@ -6,7 +6,8 @@ join patients as pat
 on e.patient = pat.id
 where start between '2019-01-01 00:00' and '2021-12-31 23:59'
 and pat.deathdate is null
-and extract(month from age ('2021-12-31', pat.birthdate)) >=6
+and (extract(year from age ('2021-12-31', pat.birthdate))*12)
++extract(month from age('2021-12-31', pat.birthdate)) >=6
 ),
 
 
