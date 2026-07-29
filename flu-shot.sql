@@ -28,6 +28,7 @@ Select pat.birthdate
 	   , pat.id
 	   , pat.first
 	   , pat.last
+	   , EXTRACT(YEAR FROM age(pat.birthdate)) AS age
 	   , flu.earliest_flu_shot_2021
 	   , case when flu.patient is not null then 1
 	   else 0
@@ -40,6 +41,17 @@ on pat.id = flu.patient
 
 where 1=1
 and pat.id in (select patient from active_patient)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
