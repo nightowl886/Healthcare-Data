@@ -9,7 +9,7 @@ Originally inspired by a YouTube tutorial project analyzing 2022 flu shots. Sinc
 
 In my dataset, influenza shots are coded as 140 or 141 instead of 5302(flu shots). This required adjustments to queries and filters to ensure accuracy.
 
-Data Cleaning Guide：
+### Data Cleaning Guide：
 
 Remove random numbers from Synthea-generated patient names using SQL
 
