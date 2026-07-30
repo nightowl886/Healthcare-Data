@@ -1,3 +1,12 @@
+---- Remove random numbers from Synthea-generated patient names using SQL
+
+UPDATE patients
+SET 
+    first = REGEXP_REPLACE(first, '[0-9]', '', 'g'),
+    last = REGEXP_REPLACE(last, '[0-9]', '', 'g');
+
+
+
 with active_patient as
 (
 select distinct patient
