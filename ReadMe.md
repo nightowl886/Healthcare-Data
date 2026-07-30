@@ -4,10 +4,12 @@
 This portfolio project explores SQL analysis of influenza shots in 2021 and is being expanded to include Tableau dashboards.
 The dataset used is Synthea Sample Synthetic Patient Records (2019–2021).
 
-Originally inspired by a YouTube tutorial project analyzing 2022 flu shots. Since the original dataset was no longer available, I downloaded the official Synthea dataset and adapted the schema. The SQL in the tutorial does not include an age column. I computed age myself using the birthdate field from the Synthea dataset. My version of the SQL is adapted to the current dataset structure.
+Originally inspired by a YouTube tutorial project analyzing 2022 flu shots. Since the original dataset was no longer available, I downloaded the official Synthea dataset and adapted the schema. The SQL in the tutorial does not include an age column. I computed age myself using the birthdate field from the Synthea dataset. My SQL version is adapted to the current dataset structure.
 
 
 In my dataset, influenza shots are coded as 140 or 141 instead of 5302(flu shots). This required adjustments to queries and filters to ensure accuracy.
+
+
 
 ## 🎯 Objectives
 
