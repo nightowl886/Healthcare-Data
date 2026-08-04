@@ -1,17 +1,17 @@
+
 # Influenza Shots Dashboard (2021)
 
 ## 📌 Project Overview
-This portfolio project explores SQL analysis of influenza shots in 2021 and is being expanded to include Tableau dashboards.
-The dataset used is Synthea Sample Synthetic Patient Records (2019–2021).
 
-Originally inspired by a YouTube tutorial project analyzing 2022 flu shots. Since the original dataset was no longer available, I downloaded the official Synthea dataset and adapted the schema. The SQL in the tutorial does not include an age column. I computed age myself using the birthdate field from the Synthea dataset. My SQL version is adapted to the current dataset structure.
+This portfolio project demonstrates SQL analysis of influenza shots in 2021, with ongoing expansion into Tableau dashboards. The dataset used is Synthea Sample Synthetic Patient Records (2019–2021).
 
+The project was originally inspired by a YouTube tutorial analyzing 2022 flu shots. Since the original dataset is no longer available, I adapted the schema using the official Synthea dataset. The tutorial’s SQL did not include an age column, so I computed age manually from the birthdate field. Queries were adjusted to align with the current dataset structure.
 
-In my dataset, influenza shots are coded as 140 or 141 instead of 5302(flu shots). This required adjustments to queries and filters to ensure accuracy.
+In this dataset, influenza shots are coded as 140 or 141 instead of 5302 (flu shots). Queries and filters were rewritten accordingly to ensure accuracy.
 
-### Data Cleaning Guide：
+### Data Cleaning Guide
 
-Remove random numbers from Synthea-generated patient names using SQL
+Remove random numbers from Synthea-generated patient names using SQL.
 
 
 ## 🎯 Objectives
@@ -51,7 +51,7 @@ Patients must be “Active at our hospital” to be included in the analysis.
 ## 🛠️ Tools & Methods
 SQL (PostgreSQL): Data validation, aggregation, stratification queries
 
-Tableau (in progress): Dashboard visualizations (KPI overview, trend charts, county-level maps)
+Tableau: Dashboard visualizations (KPI overview, trend charts, county-level maps)
 
 
 ## 🚀 Adjustments & Debugging
@@ -63,11 +63,13 @@ Debugging and refining queries ensured accurate stratification and totals.
 
 
 ## 📎 Current Status
-SQL queries completed and tested
+- SQL queries completed and tested  
+- Tableau dashboard development finished  
+- Tableau workbook added for visualization  
+- Tableau Public link available
+ Tableau Public link: https://public.tableau.com/app/profile/meghan.wang/viz/ImmunizationDashboard_17853761085020/Dashboard1?publish=yes
 
-Tableau dashboard development ongoing
 
-Future updates will include screenshots and a Tableau Public link
 
 
 ## 🔗 How to Use
@@ -79,5 +81,13 @@ Tableau workbook (coming soon) will be added for visualization
 
 
 ---
-The creator of the original tutorial has sadly passed away. This project is shared in appreciation of his work. May he rest in peace.
+The creator of the original tutorial has sadly passed away. This project is shared in appreciation of his work and his contribution to the data community. May he rest in peace.
+
+
+
+
+
+
+
+
 
